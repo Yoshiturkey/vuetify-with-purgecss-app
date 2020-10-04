@@ -1,24 +1,23 @@
 # vuetify-with-purgecss-app
 
-## Project setup
+## description
+
+vuetify を利用している vue アプリケーションの `purgecss`の設定方法を試行
+
+2020/10/4 　現在はこのバージョンを入れている
+
 ```
-yarn install
+"vuetify": "^2.2.11"
+"@fullhuman/postcss-purgecss": "^3.0.0"
+"@fullhuman/vue-cli-plugin-purgecss": "~3.0.1"
 ```
 
-### Compiles and hot-reloads for development
+## Setup
+
+アプリのディレクトリでプラグインを追加
+
 ```
-yarn serve
+vue add @fullhuman/purgecss
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+`postcss.config.js`が追加されるので本リポジトリ`postcss.config.js`の値をいれる。
